@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare - Contactos</title>
+</head>
+<body>
+
+    <header>
+        <h2>Menu</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacte a PetCare</h1>
+
+        <p>
+            Tem alguma dúvida sobre os nossos serviços?
+            Entre em contacto connosco através do formulário abaixo.
+        </p>
+
+        <section>
+            <h2>Formulário de contacto</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                           required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </p>
+
+                <p>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="pet-sitting">Pet sitting</option>
+                        <option value="passeios">Passeios de cães</option>
+                        <option value="outros">Outros assuntos</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="animal">Tipo de animal:</label>
+                    <select id="animal" name="animal">
+                        <option value="">Selecione uma opção</option>
+                        <option value="cao">Cão</option>
+                        <option value="gato">Gato</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"
+                              rows="5" required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="privacidade"
+                           name="privacidade" required>
+                    <label for="privacidade">
+                        Confirmo que li a informação de privacidade.
+                    </label>
+                </p>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Outras formas de contacto</h2>
+            <p>Email: geral@petcare.pt</p>
+            <p>Telefone: 912 345 678</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PetCare - Cuidados para animais de estimação.</p>
+        <p><a href="index.html">Voltar à página inicial</a></p>
+    </footer>
+
+</body>
+</html>
