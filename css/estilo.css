@@ -51,6 +51,11 @@ nav a:focus {
     text-decoration: underline;
 }
 
+a:focus, input:focus, select:focus, textarea:focus, button:focus {
+    outline: 3px solid #2d6a4f;
+    outline-offset: 2px;
+}
+
 /* ================================= Tipografia e Elementos ================================= */
 h1 {
     color: #1b4332;
