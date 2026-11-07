@@ -199,3 +199,47 @@ button:focus-visible {
     flex-direction: column;
     gap: 5px;
 }
+
+/* ================================= Design Responsivo (E5) ================================= */
+
+/* Estilos base (Mobile-First para ecrãs pequenos) */
+body {
+    font-size: 14px;
+}
+
+.image-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Ponto de rutura 1: Dispositivos móveis maiores / Tablets pequenos (>= 480px) */
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* Ponto de rutura 2: Tablets e Ecrãs Médios (>= 768px) */
+@media screen and (min-width: 768px) {
+    .image-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ponto de rutura 3: Desktops e Ecrãs Grandes (>= 1280px) */
+@media screen and (min-width: 1280px) {
+    main {
+        max-width: 1200px;
+    }
+    
+    .image-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Garantir alvos de toque mínimos de 24x24px (ou superiores para boa acessibilidade) */
+nav a, button, input, select, textarea {
+    min-height: 36px;
+    min-width: 36px;
+}
