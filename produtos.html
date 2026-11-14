@@ -4,99 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare - Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
-        <h2>Menu</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="servicos.html">Serviços</a></li>                
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="artigo.html">Artigo</a></li>                
-                <li><a href="contacto.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <h2>Menu</h2>
+            <nav>
+                <ul class="navbar-nav flex-row flex-wrap gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>                
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artigo.html">Artigo</a></li>                
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre nós</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Catálogo de Produtos</h1>
+    <main class="container my-4">
+        <h1 class="mb-3">Catálogo de Produtos</h1>
         <p>Atualizado em: <time datetime="2026-10-29">29 de Outubro de 2026</time></p>
 
-        <section>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                     srcset="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 320w,
-                             https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 480w,
-                             https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 640w,
-                             https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 960w,
-                             https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 1280w,
-                             https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=1720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 1720w"
-                     sizes="(min-width: 1024px) 860px, (min-width: 1000px) 872px, (min-width: 768px) calc(100vw - 128px), (min-width: 480px) calc(100vw - 40px), calc(100vw - 32px)"
-                     width="1470" alt="Brinquedo de Cão em formato de osso.">
-                <figcaption>Brinquedo osso resistente para cães</figcaption>
-            </figure>
-            <h2>Brinquedo para Cão</h2>   
-            <p>Concebido para cães com hábitos de mastigação intensa, este brinquedo é fabricado em borracha natural de alta densidade. Ajuda a canalizar a energia acumulada e alivia o stress. A superfície texturada massaja as gengivas durante a mordida e fortalece a mandíbula.</p>
-            
-            <details>
-                <summary>Ver informações de segurança</summary>
-                <p>Fabricado em borracha natural de alta densidade e não tóxica.</p>
-            </details>
+        <div class="row g-4 mt-2">
+            <!-- Produto 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 p-3">
+                    <figure class="m-0">
+                        <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                             srcset="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 320w,
+                                     https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 480w,
+                                     https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 640w,
+                                     https://images.unsplash.com/photo-1535294435445-d7249524ef2e?q=80&w=960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 960w"
+                             sizes="(min-width: 768px) 33vw, 100vw"
+                             class="card-img-top img-fluid rounded" alt="Brinquedo de Cão em formato de osso.">
+                        <figcaption class="text-muted small mt-2">Brinquedo osso resistente para cães</figcaption>
+                    </figure>
+                    <div class="card-body px-0">
+                        <h2 class="h5">Brinquedo para Cão</h2>   
+                        <p class="card-text">Concebido para cães com hábitos de mastigação intensa, este brinquedo é fabricado em borracha natural de alta densidade. Ajuda a canalizar a energia acumulada e alivia o stress.</p>
+                        
+                        <details class="mb-3">
+                            <summary>Ver informações de segurança</summary>
+                            <p class="small text-muted mt-1">Fabricado em borracha natural de alta densidade e não tóxica.</p>
+                        </details>
 
-            <p><strong>Preço:</strong> 8,50 €</p>
-        </section>
+                        <p class="fw-bold">Preço: 8,50 €</p>
+                    </div>
+                </div>
+            </div>
 
-        <section>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                     srcset="https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 320w,
-                             https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 480w,
-                             https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 687w,
-                             https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 960w,
-                             https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 1374w"
-                     sizes="(min-width: 768px) min(687px, calc(100vw - 128px)), (min-width: 480px) min(687px, calc(100vw - 40px)), calc(100vw - 32px)"
-                     width="687" alt="Cão a comer de comedouro de inox com ração-">
-                <figcaption>Comedouro prático e higiénico</figcaption>
-            </figure>
-            <h2>Comedouro em Inox</h2>
-            <p>Concebida para proporcionar o máximo conforto e higiene durante a alimentação do seu animal de estimação. Fabricada em aço inoxidável de qualidade alimentar resistente à corrosão e riscos, não liberta substâncias tóxicas, não retém odores e evita a acumulação de bactérias.</p>
-            <p>Conta com uma base em borracha antiderrapante que impede o comedouro de deslizar pelo chão ou tombar enquanto o animal come ou bebe, protegendo o pavimento da casa. É fácil de higienizar e pode ser lavada na máquina de lavar louça.</p>
-            
-            <details>
-                <summary>Ver informações de manutenção</summary>
-                <p>Apto para máquina de lavar louça. Recomenda-se remover a base de borracha antes de lavar a altas temperaturas.</p>
-            </details>
+            <!-- Produto 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 p-3">
+                    <figure class="m-0">
+                        <img src="https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                             srcset="https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 320w,
+                                     https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 480w,
+                                     https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 687w"
+                             sizes="(min-width: 768px) 33vw, 100vw"
+                             class="card-img-top img-fluid rounded" alt="Cão a comer de comedouro de inox com ração">
+                        <figcaption class="text-muted small mt-2">Comedouro prático e higiénico</figcaption>
+                    </figure>
+                    <div class="card-body px-0">
+                        <h2 class="h5">Comedouro em Inox</h2>
+                        <p class="card-text">Concebida para proporcionar o máximo conforto e higiene durante a alimentação. Fabricada em aço inoxidável resistente à corrosão, não retém odores.</p>
+                        
+                        <details class="mb-3">
+                            <summary>Ver informações de manutenção</summary>
+                            <p class="small text-muted mt-1">Apto para máquina de lavar louça.</p>
+                        </details>
 
-            <p><strong>Preço:</strong> 12,50 €</p>
-        </section>
+                        <p class="fw-bold">Preço: 12,50 €</p>
+                    </div>
+                </div>
+            </div>
 
-        <section>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                     srcset="https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 320w,
-                             https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 480w,
-                             https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 640w,
-                             https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 960w,
-                             https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 1280w,
-                             https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=1720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 1720w"
-                     sizes="(min-width: 1024px) 860px, (min-width: 1000px) 872px, (min-width: 768px) calc(100vw - 128px), (min-width: 480px) calc(100vw - 40px), calc(100vw - 32px)"
-                     width="1470" alt="Cão na banheira com embalagem de shampoo pousada ao lado.">
-                <figcaption>Shampoo suave para peles sensíveis</figcaption>
-            </figure>
-            <h2>Shampoo Suave Para Cão</h2>
-            <p>Formulado especialmente para a higiene regular de animais com pele sensível ou tendência a irritações cutâneas. Com pH neutro e agentes de limpeza de base vegetal, limpa suavemente sem ressecar a epiderme nem retirar a barreira lipídica protetora do pelo.</p>
-            <p>Ajuda a manter a pelagem brilhante, macia e fácil de escovar, deixando um aroma suave e fresco que combate os maus odores. Isento de corantes artificiais e parabenos, é seguro para banhos frequentes em cães e gatos de todas as idades.</p>
-            
-            <details>
-                <summary>Ver informações de aplicação</summary>
-                <p>Aplicar no pelo molhado, massajar até fazer espuma e enxaguar abundantemente. Evitar o contacto direto com os olhos e ouvidos do animal.</p>
-            </details>
+            <!-- Produto 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 p-3">
+                    <figure class="m-0">
+                        <img src="https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                             srcset="https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 320w,
+                                     https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 480w,
+                                     https://images.unsplash.com/photo-1647002380351-ba23ff97c428?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D 640w"
+                             sizes="(min-width: 768px) 33vw, 100vw"
+                             class="card-img-top img-fluid rounded" alt="Cão na banheira com shampoo.">
+                        <figcaption class="text-muted small mt-2">Shampoo suave para peles sensíveis</figcaption>
+                    </figure>
+                    <div class="card-body px-0">
+                        <h2 class="h5">Shampoo Suave Para Cão</h2>
+                        <p class="card-text">Formulado especialmente para a higiene regular de animais com pele sensível ou tendência a irritações cutâneas. Com pH neutro e agentes de limpeza de base vegetal.</p>
+                        
+                        <details class="mb-3">
+                            <summary>Ver informações de aplicação</summary>
+                            <p class="small text-muted mt-1">Aplicar no pelo molhado, massajar e enxaguar.</p>
+                        </details>
 
-            <p><strong>Preço:</strong> 22,00 €</p>
-        </section>
+                        <p class="fw-bold">Preço: 22,00 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
