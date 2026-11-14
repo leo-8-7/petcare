@@ -14,7 +14,7 @@ Desenvolver um sítio Web responsivo e acessível para apresentar os serviços d
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
+- Bootstrap (Versão: 5.3.3)
 
 # Páginas previstas
 - Página inicial
