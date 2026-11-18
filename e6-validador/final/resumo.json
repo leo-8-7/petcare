@@ -1,0 +1,82 @@
+[
+  {
+    "pagina": "index.html",
+    "fase": "final",
+    "lighthouse": "13.6.0",
+    "axe": "4.14.0",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 91
+    },
+    "violacoes": [],
+    "revisaoManual": [],
+    "falhasLighthouse": [
+      {
+        "id": "errors-in-console",
+        "titulo": "Os erros do navegador foram registados na consola",
+        "score": 0
+      },
+      {
+        "id": "meta-description",
+        "titulo": "O documento não tem uma meta descrição",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "pagina": "contacto.html",
+    "fase": "final",
+    "lighthouse": "13.6.0",
+    "axe": "4.14.0",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 90
+    },
+    "violacoes": [],
+    "revisaoManual": [
+      {
+        "id": "color-contrast",
+        "elementos": 2
+      }
+    ],
+    "falhasLighthouse": [
+      {
+        "id": "errors-in-console",
+        "titulo": "Os erros do navegador foram registados na consola",
+        "score": 0
+      },
+      {
+        "id": "meta-description",
+        "titulo": "O documento não tem uma meta descrição",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "pagina": "artigo.html",
+    "fase": "final",
+    "lighthouse": "13.6.0",
+    "axe": "4.14.0",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 90
+    },
+    "violacoes": [],
+    "revisaoManual": [],
+    "falhasLighthouse": [
+      {
+        "id": "errors-in-console",
+        "titulo": "Os erros do navegador foram registados na consola",
+        "score": 0
+      },
+      {
+        "id": "meta-description",
+        "titulo": "O documento não tem uma meta descrição",
+        "score": 0
+      }
+    ]
+  }
+]

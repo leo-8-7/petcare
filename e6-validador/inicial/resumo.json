@@ -1,0 +1,123 @@
+[
+  {
+    "pagina": "index.html",
+    "fase": "inicial",
+    "lighthouse": "13.6.0",
+    "axe": "4.14.0",
+    "scores": {
+      "accessibility": 93,
+      "best-practices": 96,
+      "seo": 91
+    },
+    "violacoes": [
+      {
+        "id": "color-contrast",
+        "impacto": "serious",
+        "descricao": "Elements must meet minimum color contrast ratio thresholds",
+        "elementos": 6
+      }
+    ],
+    "revisaoManual": [
+      {
+        "id": "color-contrast",
+        "elementos": 1
+      }
+    ],
+    "falhasLighthouse": [
+      {
+        "id": "errors-in-console",
+        "titulo": "Os erros do navegador foram registados na consola",
+        "score": 0
+      },
+      {
+        "id": "color-contrast",
+        "titulo": "As cores de primeiro e de segundo plano não têm uma relação de contraste suficiente",
+        "score": 0
+      },
+      {
+        "id": "meta-description",
+        "titulo": "O documento não tem uma meta descrição",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "pagina": "contacto.html",
+    "fase": "inicial",
+    "lighthouse": "13.6.0",
+    "axe": "4.14.0",
+    "scores": {
+      "accessibility": 97,
+      "best-practices": 96,
+      "seo": 90
+    },
+    "violacoes": [
+      {
+        "id": "heading-order",
+        "impacto": "moderate",
+        "descricao": "Heading levels should only increase by one",
+        "elementos": 1
+      }
+    ],
+    "revisaoManual": [
+      {
+        "id": "color-contrast",
+        "elementos": 1
+      }
+    ],
+    "falhasLighthouse": [
+      {
+        "id": "errors-in-console",
+        "titulo": "Os erros do navegador foram registados na consola",
+        "score": 0
+      },
+      {
+        "id": "heading-order",
+        "titulo": "Os elementos do título não se encontram numa ordem sequencialmente decrescente",
+        "score": 0
+      },
+      {
+        "id": "meta-description",
+        "titulo": "O documento não tem uma meta descrição",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "pagina": "artigo.html",
+    "fase": "inicial",
+    "lighthouse": "13.6.0",
+    "axe": "4.14.0",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 90
+    },
+    "violacoes": [
+      {
+        "id": "landmark-unique",
+        "impacto": "moderate",
+        "descricao": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "elementos": 1
+      }
+    ],
+    "revisaoManual": [
+      {
+        "id": "color-contrast",
+        "elementos": 1
+      }
+    ],
+    "falhasLighthouse": [
+      {
+        "id": "errors-in-console",
+        "titulo": "Os erros do navegador foram registados na consola",
+        "score": 0
+      },
+      {
+        "id": "meta-description",
+        "titulo": "O documento não tem uma meta descrição",
+        "score": 0
+      }
+    ]
+  }
+]
