@@ -62,13 +62,26 @@ a:focus, input:focus, select:focus, textarea:focus, button:focus {
 /* ================================= Correção do Menu com Bootstrap ================================= */
 header.navbar {
     background-color: #2d6a4f !important;
-    padding: 15px 20px !important;
-    justify-content: flex-start !important;
+    padding: 12px 16px !important;
+    display: block !important;
+}
+
+header.navbar .container-fluid {
+    display: block !important;
+    padding: 0 !important;
+}
+
+header.navbar h2 {
+    margin: 0 0 10px 0 !important;
+    font-size: 1.2rem !important;
+    color: #ffffff !important;
 }
 
 header .navbar-nav {
     display: flex !important;
+    flex-direction: row !important;
     flex-wrap: wrap !important;
+    justify-content: flex-start !important;
     gap: 15px !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -79,7 +92,8 @@ header .nav-link {
     color: #d8f3dc !important;
     text-decoration: none !important;
     font-weight: 600 !important;
-    padding: 0 !important;
+    padding: 10px 8px !important;
+    min-height: 44px !important;
 }
 
 header .nav-link:hover,
