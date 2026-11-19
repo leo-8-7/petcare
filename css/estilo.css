@@ -21,7 +21,7 @@ main {
 /* ================================= Cabeçalho e Navegação ================================= */
 header {
     background-color: #2d6a4f;
-    color: #ffffff !important;
+    color: #ffffff;
     padding: 12px 16px;
 }
 
@@ -57,6 +57,35 @@ nav a:focus {
 a:focus, input:focus, select:focus, textarea:focus, button:focus {
     outline: 3px solid #2d6a4f;
     outline-offset: 2px;
+}
+
+/* ================================= Correção do Menu com Bootstrap ================================= */
+header.navbar {
+    background-color: #2d6a4f !important;
+    padding: 15px 20px !important;
+    justify-content: flex-start !important;
+}
+
+header .navbar-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+header .nav-link {
+    color: #d8f3dc !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+}
+
+header .nav-link:hover,
+header .nav-link:focus {
+    color: #ffffff !important;
+    text-decoration: underline !important;
 }
 
 /* ================================= Tipografia e Elementos ================================= */
